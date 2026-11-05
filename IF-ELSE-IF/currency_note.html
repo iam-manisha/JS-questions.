@@ -1,0 +1,36 @@
+<!-- 10. Currency Note Counter Write a JavaScript program that accepts an amount and
+identifies the largest currency note that can be used to represent that amount.
+Use the following conditions: - If the amount is ₹500 or above, print "Use ₹500
+notes". - If the amount is ₹200 or above but less than ₹500, print "Use ₹200
+notes". - If the amount is ₹100 or above but less than ₹200, print "Use ₹100
+notes". - If the amount is ₹50 or above but less than ₹100, print "Use ₹50
+notes". - If the amount is ₹10 or above but less than ₹50, print "Use ₹10
+notes". - If the amount is less than ₹10, print "Use coins". -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Note Counter</title>
+    <script>
+      let amount = Number(prompt("Enter amount"));
+      if (amount >= 500) {
+        console.log("Use ₹500 notes");
+      } else if (amount >= 200) {
+        console.log("Use ₹200 notes");
+      } else if (amount >= 100) {
+        console.log("Use ₹100 notes");
+      } else if (amount >= 50) {
+        console.log("Use ₹50 notes");
+      } else if (amount >= 10) {
+        console.log("Use ₹10 notes");
+      } else {
+        console.log("Use coins");
+      }
+    </script>
+  </head>
+  <body>
+    Currency Note Counter
+  </body>
+</html>

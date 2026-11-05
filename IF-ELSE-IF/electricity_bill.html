@@ -1,0 +1,31 @@
+8. Electricity Bill Calculator Write a JavaScript program that accepts the
+number of electricity units consumed and calculates the bill based on the
+following rates: - If the units are less than or equal to 100, charge ₹2 per
+unit. - If the units are between 101 and 200, charge ₹3 per unit. - If the units
+are between 201 and 300, charge ₹5 per unit. - If the units are above 300,
+charge ₹7 per unit.
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity Bill Calculator</title>
+    <script>
+      let unit = Number(prompt("Enter your unit"));
+
+      if (unit <= 100) {
+        console.log("Total bill is", unit * 2);
+      } else if (unit >= 101 && unit <= 200) {
+        console.log("Total bill is", unit * 3);
+      } else if (unit >= 201 && unit <= 300) {
+        console.log("Total bill is", unit * 5);
+      } else {
+        console.log("Total bill is", unit * 7);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Electricity Bill Calculator</h1>
+  </body>
+</html>

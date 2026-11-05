@@ -1,0 +1,25 @@
+<!-- 6. ATM Withdrawal Write a JavaScript program that accepts the account balance
+and withdrawal amount. - If the withdrawal amount is less than or equal to the
+account balance, print "Withdrawal successful". - Otherwise, print "Insufficient
+balance". -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM Withdrawal Checker</title>
+    <script>
+      let balance = Number(prompt("Enter your balance"));
+      let withdrawal = Number(prompt("Enter your withdrawal amount"));
+      if (withdrawal <= balance) {
+        console.log("Withdrawal successful");
+      } else {
+        console.log("Insufficient balance");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>ATM Withdrawal Checker</h1>
+  </body>
+</html>
